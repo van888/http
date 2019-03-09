@@ -1,0 +1,23 @@
+<button (click)="getIncident()"> get Incident </button>
+
+<!-- <div> {{ DATE_TIME  }} </div> -->
+
+<!-- <div>{{ incident.DATE_TIME | json }} </div> -->
+
+<!-- <div *ngIf="incident && incident.length > 0">
+    {{incident.DATE_TIME | json}}
+</div> -->
+
+<div> 
+    <!-- {{ incident?.DATE_TIME }} <br> -->
+    <!-- {{ incident?.CREATION_DATE }}  <br>    -->
+    <p> {{ incident?.MODIFICATION_DATE }} </p>
+
+    <!-- {{incident?.PROGNOSIS}} <br> -->
+
+    <p> {{incident?.STATUS}} </p>
+
+    {{incident?.INCIDENT_TYPE}} <br>
+    {{incident?.LOCATION_NAME}} <br>
+    <!-- {{incident?.INCIDENT_NAME}} <br> -->
+</div>
